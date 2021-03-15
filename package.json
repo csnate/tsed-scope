@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "ts-node src/index.ts",
+    "express": "ts-node src/express-server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
