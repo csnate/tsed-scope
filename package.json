@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@tsed/async-hook-context": "^6.33.3",
     "@tsed/common": "^6.33.3",
     "@tsed/core": "^6.33.3",
     "@tsed/di": "^6.33.3",

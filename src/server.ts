@@ -1,6 +1,7 @@
 import {Configuration, Inject, PlatformApplication} from "@tsed/common";
 import { json, urlencoded } from "body-parser";
 import { Test2Middleware, TestMiddleware } from './middlewares/testMiddleware';
+import { PlatformAsyncHookContext } from '@tsed/async-hook-context';
 
 const rootDir = __dirname;
 
@@ -8,7 +9,7 @@ const rootDir = __dirname;
   rootDir,
   acceptMimes: ["application/json"]
 })
-export class Server {
+export class Server extends PlatformAsyncHookContext {
   @Inject()
   app: PlatformApplication;
 
